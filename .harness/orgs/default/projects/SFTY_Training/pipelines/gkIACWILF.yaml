@@ -54,11 +54,8 @@ pipeline:
                   timeout: 10m
                   spec:
                     command: apply
+          codebase:
+            connectorRef: gkgitconnector
+            repoName: Terraform
+            build: <+input>
         tags: {}
-  properties:
-    ci:
-      codebase:
-        connectorRef: gkgitconnector
-        repoName: Terraform
-        build: <+input>
-        sparseCheckout: []
