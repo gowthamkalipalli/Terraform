@@ -46,5 +46,6 @@ pipeline:
     ci:
       codebase:
         connectorRef: gkgitconnector
+        repoName: Terraform
         build: <+input>
         sparseCheckout: []
